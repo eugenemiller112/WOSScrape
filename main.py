@@ -1,6 +1,7 @@
 from wos import WosClient
 import wos.utils
 
+
 def print_author(author):
     with WosClient('eugene.miller@colorado.edu', 'F+KB;!zkfKN7F:') as client:
         print(wos.utils.query(client, ('AU=' + author)))
